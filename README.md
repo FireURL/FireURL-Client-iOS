@@ -24,6 +24,8 @@ You must specify the configurations of the FireURL server in ```Settings.app``` 
 
 ## Usage
 ### Using Share extension
+<img src="Screenshots/share_extension.png" height=500/>
+
 1. Start your FireURL Server on your computer
 2. Open a webpage on ```Safari``` on your iOS Device
 3. Tap the ```Share``` button located at the bottom toolbar
@@ -31,6 +33,8 @@ You must specify the configurations of the FireURL server in ```Settings.app``` 
 5. See the webpage on ```Safari``` showing on your computer.
 
 ### Using the App Icon
+<img src="Screenshots/app_icon.png" height=500/>
+
 1. Copy a URL to your clipboard on an iOS Device
 2. Locate the app icon of ```FireURL```
 3. Tap on the icon
