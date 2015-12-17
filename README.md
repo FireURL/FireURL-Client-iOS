@@ -1,5 +1,5 @@
 # FireURL Client for iOS
-Conveniently fires an URL from iOS's pasteboard, and any link-based sharing app to a FireURL server, magically.
+Conveniently fires an URL from iOS's pasteboard, or any link-based sharing app to a FireURL server, magically.
 
 ## Prerequisites
 1. Computer with [FireURL Server](https://github.com/FireURL/FireURL-Server) (>= 0.3.1) running
