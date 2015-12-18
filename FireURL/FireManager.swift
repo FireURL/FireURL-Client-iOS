@@ -8,7 +8,7 @@ internal class FireManager {
    var firing = false
    var currentReq : Request? = nil
 
-   private static func convertURI(str : String) -> String? {
+   static func convertURI(str : String) -> String? {
       // returns str if valid URI, nil otherwise
       return NSURL(string: str) != nil ? str : nil
    }
@@ -32,11 +32,12 @@ internal class FireManager {
       }
    }
 
-   func firePasteBoard() {
-      if let theString = UIPasteboard.generalPasteboard().string {
-         fireURIStr(theString)
-      }
-   }
+//   func getPasteBoard() {
+//      if let theString = UIPasteboard.generalPasteboard().string {
+//         fireURIStr(theString)
+//         NSNotificationCenter.defaultCenter().postNotificationName("com.prankymat.fireURL.didFindFireableURI", object: ["uri": theString])
+//      }
+//   }
 
    func stopAllFiring() {
       if let currentReq = currentReq {

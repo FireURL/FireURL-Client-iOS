@@ -35,7 +35,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
    func applicationDidBecomeActive(application: UIApplication) {
       // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-      let defaults = NSUserDefaults.standardUserDefaults()
+      guard let defaults = NSUserDefaults(suiteName: "group.com.PrankyMat.FireURL") else {
+         fatalError("Couldn't find NSUserDefault with app group")
+      }
 
       if let host = defaults.valueForKey("host_perference") where host as? String == "" {
           defaults.setObject("0.0.0.0", forKey: "host_perference")

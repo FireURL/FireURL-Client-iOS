@@ -41,7 +41,7 @@
                                 </constraints>
                             </activityIndicatorView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yw7-mN-dUh">
-                                <rect key="frame" x="20" y="400" width="560" height="30"/>
+                                <rect key="frame" x="261.5" y="400" width="77" height="30"/>
                                 <state key="normal" title="Start Firing">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -95,7 +95,6 @@
                         </subviews>
                         <color key="backgroundColor" red="0.75294117647058822" green="0.22352941176470587" blue="0.16862745098039217" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="Yw7-mN-dUh" secondAttribute="trailing" id="6NB-WD-H62"/>
                             <constraint firstItem="ldY-oF-GVu" firstAttribute="bottom" secondItem="Uk1-W0-ojz" secondAttribute="bottom" constant="70" id="7iM-v1-adV"/>
                             <constraint firstItem="o1b-0U-Uri" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="A5D-Xo-6ct"/>
                             <constraint firstItem="ldY-oF-GVu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="DBV-Xm-Xz4"/>
@@ -108,7 +107,6 @@
                             <constraint firstItem="Uk1-W0-ojz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="jkk-yS-hPX"/>
                             <constraint firstItem="Yw7-mN-dUh" firstAttribute="top" secondItem="J3R-SP-464" secondAttribute="bottom" constant="30" id="mGT-Y1-25X"/>
                             <constraint firstItem="Uk1-W0-ojz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="otc-Mm-B6a"/>
-                            <constraint firstItem="Yw7-mN-dUh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="x3j-OG-ztQ"/>
                         </constraints>
                     </view>
                     <connections>

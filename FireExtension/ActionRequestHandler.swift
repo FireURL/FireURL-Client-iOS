@@ -24,6 +24,7 @@ class ActionRequestHandler: NSObject, NSExtensionRequestHandling {
                      NSOperationQueue.mainQueue().addOperationWithBlock {
                         if let baseURL = results.valueForKeyPath("NSExtensionJavaScriptPreprocessingResultsKey.baseURI") as? String {
                            FireManager.sharedInstance.fireURIStr(baseURL)
+                           print(baseURL)
                         } else {
                            fatalError("Cannot get URI from webpage!")
                         }

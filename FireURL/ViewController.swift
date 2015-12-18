@@ -3,7 +3,10 @@ import UIKit
 class ViewController: UIViewController {
    
    dynamic private func didBecomeActiveHandler(notification: NSNotification){
-      FireManager.sharedInstance.firePasteBoard()
+      if let str = UIPasteboard.generalPasteboard().string,
+         let url = FireManager.convertURI(str) {
+         targetURL.text = url
+      }
    }
 
    dynamic private func didFireURIHandler(notification: NSNotification) {
@@ -19,12 +22,29 @@ class ViewController: UIViewController {
       reportStop()
    }
 
+   dynamic private func didFindFireableURIHandler(notification: NSNotification) {
+      guard let uri = notification.object?["uri"] else {
+         return
+      }
+      if let uri = uri as? String {
+         targetURL.text = uri
+      }
+   }
+
+   dynamic private func dismissKeyboard() {
+      view.endEditing(true)
+   }
+
    override func viewDidLoad() {
       super.viewDidLoad()
       // Register background to foreground notification handlers
       NSNotificationCenter.defaultCenter().addObserver(self, selector: "didBecomeActiveHandler:", name:"com.prankymat.fireURL.didBecomeActive", object: nil)
       NSNotificationCenter.defaultCenter().addObserver(self, selector: "didFireURIHandler:", name: "com.prankymat.fireURL.didFireURI", object: nil)
       NSNotificationCenter.defaultCenter().addObserver(self, selector: "didCancelFireURIHandler:", name: "com.prankymat.fireURL.didCancelFireURI", object: nil)
+//      NSNotificationCenter.defaultCenter().addObserver(self, selector: "didFindFireableURIHandler:", name: "com.prankymat.fireURL.didFindFireableURI", object: nil)
+
+      let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+      view.addGestureRecognizer(tap)
    }
 
 

@@ -23,7 +23,7 @@
 		398C6CD61C23EE3C00EE014F /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 398C6CD51C23EE3C00EE014F /* Settings.bundle */; };
 		398C6CD71C23EE3C00EE014F /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 398C6CD51C23EE3C00EE014F /* Settings.bundle */; };
 		398C6CE01C23F4BE00EE014F /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 398C6CC61C23C1CF00EE014F /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		398C6CE71C23F4FC00EE014F /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 398C6CC61C23C1CF00EE014F /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		398C6CE71C23F4FC00EE014F /* Alamofire.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 398C6CC61C23C1CF00EE014F /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		39DF09901C209DF100AC341D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DF098F1C209DF100AC341D /* NetworkManager.swift */; };
 		39E4F2201C225705006E77B0 /* ActionRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E4F21F1C225705006E77B0 /* ActionRequestHandler.swift */; };
 		39E4F2261C225705006E77B0 /* FireExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 39E4F21D1C225705006E77B0 /* FireExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -113,14 +113,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		398C6CE61C23F4F400EE014F /* CopyFiles */ = {
+		398C6CE61C23F4F400EE014F /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				398C6CE71C23F4FC00EE014F /* Alamofire.framework in CopyFiles */,
+				398C6CE71C23F4FC00EE014F /* Alamofire.framework in Copy Files */,
 			);
+			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		39E4F22A1C225705006E77B0 /* Embed App Extensions */ = {
@@ -153,6 +154,7 @@
 		39E4F21D1C225705006E77B0 /* FireExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FireExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		39E4F21F1C225705006E77B0 /* ActionRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionRequestHandler.swift; sourceTree = "<group>"; };
 		39E4F2231C225705006E77B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39E7F9081C24023D00955461 /* FireURL.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = FireURL.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +199,7 @@
 		39184DC71C209D8800262917 /* FireURL */ = {
 			isa = PBXGroup;
 			children = (
+				39E7F9081C24023D00955461 /* FireURL.entitlements */,
 				398C6CD51C23EE3C00EE014F /* Settings.bundle */,
 				396245B11C23A84D0052A0DC /* github.png */,
 				396245AD1C23A1470052A0DC /* icon.png */,
@@ -266,7 +269,7 @@
 				39E4F2191C225705006E77B0 /* Sources */,
 				39E4F21A1C225705006E77B0 /* Frameworks */,
 				39E4F21B1C225705006E77B0 /* Resources */,
-				398C6CE61C23F4F400EE014F /* CopyFiles */,
+				398C6CE61C23F4F400EE014F /* Copy Files */,
 			);
 			buildRules = (
 			);
@@ -291,6 +294,11 @@
 					39184DC41C209D8800262917 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = HXY2V2SCJW;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					39E4F21C1C225705006E77B0 = {
 						CreatedOnToolsVersion = 7.2;
@@ -482,6 +490,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -527,6 +536,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -549,6 +559,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FireURL/FireURL.entitlements;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -564,6 +575,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FireURL/FireURL.entitlements;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
