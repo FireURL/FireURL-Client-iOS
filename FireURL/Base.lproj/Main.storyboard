@@ -57,6 +57,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                 <state key="normal" image="github.png"/>
+                                <connections>
+                                    <action selector="githubClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="th6-ep-SXP"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="ldY-oF-GVu">
                                 <rect key="frame" x="20" y="228" width="560" height="68"/>
@@ -112,6 +115,7 @@
                     <connections>
                         <outlet property="actionButton" destination="Yw7-mN-dUh" id="Rhc-dj-2HF"/>
                         <outlet property="activityIndicator" destination="J3R-SP-464" id="bq2-68-wJ8"/>
+                        <outlet property="serverConfigLabel" destination="W93-6C-bwY" id="hR8-Uo-yGi"/>
                         <outlet property="targetURL" destination="6he-Yv-PNJ" id="2AS-kA-Uot"/>
                     </connections>
                 </viewController>

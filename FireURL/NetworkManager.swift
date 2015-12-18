@@ -3,7 +3,7 @@ import Foundation
 
 internal class NetworkManager {
    private static let defaults = NSUserDefaults(suiteName: "group.com.PrankyMat.FireURL")!
-   private static var hostPref : String {
+   static var hostPref : String {
       get {
          guard let host = defaults.valueForKey("host_perference") as? String else {
             return "0.0.0.0"
@@ -13,7 +13,7 @@ internal class NetworkManager {
       }
    }
 
-   private static var portPref : Int {
+   static var portPref : Int {
       get {
          guard let port = defaults.valueForKey("port_perference") as? String where Int(port) != nil else {
             return 0

@@ -7,6 +7,8 @@ class ViewController: UIViewController {
          let url = FireManager.convertURI(str) {
          targetURL.text = url
       }
+
+      serverConfigLabel.text = "\(NetworkManager.hostPref):\(NetworkManager.portPref)"
    }
 
    dynamic private func didFireURIHandler(notification: NSNotification) {
@@ -56,16 +58,24 @@ class ViewController: UIViewController {
 
    @IBOutlet weak var targetURL: UITextField!
    
+   @IBOutlet weak var serverConfigLabel: UILabel!
+
    @IBAction func actionButtonClicked(sender: AnyObject) {
-      if FireManager.sharedInstance.firing {
+      switch FireManager.sharedInstance.firing {
+      case true:
          FireManager.sharedInstance.stopAllFiring()
          reportStop()
-      } else {
+
+      case false:
          if let uri = targetURL.text {
             reportStart()
             FireManager.sharedInstance.fireURIStr(uri)
          }
       }
+   }
+
+   @IBAction func githubClicked(sender: AnyObject) {
+      UIApplication.sharedApplication().openURL(NSURL(string: "https://fireurl.github.io/")!)
    }
 
    func reportStop() {
