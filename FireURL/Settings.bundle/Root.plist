@@ -54,7 +54,7 @@
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 			<key>FooterText</key>
-			<string>Please refer to http://github.com/prankymat/FireURL for instructions.</string>
+			<string>Please refer to https://fireurl.github.io/ for instructions.</string>
 		</dict>
 	</array>
 </dict>

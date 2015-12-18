@@ -41,7 +41,6 @@ class ViewController: UIViewController {
       NSNotificationCenter.defaultCenter().addObserver(self, selector: "didBecomeActiveHandler:", name:"com.prankymat.fireURL.didBecomeActive", object: nil)
       NSNotificationCenter.defaultCenter().addObserver(self, selector: "didFireURIHandler:", name: "com.prankymat.fireURL.didFireURI", object: nil)
       NSNotificationCenter.defaultCenter().addObserver(self, selector: "didCancelFireURIHandler:", name: "com.prankymat.fireURL.didCancelFireURI", object: nil)
-//      NSNotificationCenter.defaultCenter().addObserver(self, selector: "didFindFireableURIHandler:", name: "com.prankymat.fireURL.didFindFireableURI", object: nil)
 
       let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
       view.addGestureRecognizer(tap)

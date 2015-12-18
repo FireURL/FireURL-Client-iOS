@@ -32,13 +32,6 @@ internal class FireManager {
       }
    }
 
-//   func getPasteBoard() {
-//      if let theString = UIPasteboard.generalPasteboard().string {
-//         fireURIStr(theString)
-//         NSNotificationCenter.defaultCenter().postNotificationName("com.prankymat.fireURL.didFindFireableURI", object: ["uri": theString])
-//      }
-//   }
-
    func stopAllFiring() {
       if let currentReq = currentReq {
          currentReq.cancel()
