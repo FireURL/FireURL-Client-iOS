@@ -50,23 +50,4 @@ internal class NetworkManager {
          }
       }
    }
-
-   func performGetRequest(params : Dictionary<String, String>, callback : ((succeed : Bool)->())?) throws {
-      var succeed : Bool = false
-
-      let opt = try! HTTP.GET("http://" + host + ":" + String(port), parameters: params)
-      opt.start { response in
-         guard response.statusCode != nil && response.statusCode == 200 else {
-            succeed = false
-            return
-         }
-         succeed = true
-
-         defer {
-            if let callback = callback {
-               callback(succeed: succeed)
-            }
-         }
-      }
-   }
 }

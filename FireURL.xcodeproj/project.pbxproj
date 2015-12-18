@@ -19,6 +19,8 @@
 		39388A101C22883A0099DE95 /* FireManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39388A0F1C22883A0099DE95 /* FireManager.swift */; };
 		39388A111C2289490099DE95 /* FireManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39388A0F1C22883A0099DE95 /* FireManager.swift */; };
 		39388A121C228C130099DE95 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DF098F1C209DF100AC341D /* NetworkManager.swift */; };
+		396245AE1C23A1470052A0DC /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 396245AD1C23A1470052A0DC /* icon.png */; };
+		396245B21C23A84D0052A0DC /* github.png in Resources */ = {isa = PBXBuildFile; fileRef = 396245B11C23A84D0052A0DC /* github.png */; };
 		39DF09901C209DF100AC341D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DF098F1C209DF100AC341D /* NetworkManager.swift */; };
 		39E4F2201C225705006E77B0 /* ActionRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E4F21F1C225705006E77B0 /* ActionRequestHandler.swift */; };
 		39E4F2261C225705006E77B0 /* FireExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 39E4F21D1C225705006E77B0 /* FireExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -61,6 +63,8 @@
 		39184DD41C209D8800262917 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39388A0D1C22627B0099DE95 /* Pods_FireExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_FireExtension.framework; path = "Pods/../build/Debug-iphoneos/Pods_FireExtension.framework"; sourceTree = "<group>"; };
 		39388A0F1C22883A0099DE95 /* FireManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireManager.swift; sourceTree = "<group>"; };
+		396245AD1C23A1470052A0DC /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		396245B11C23A84D0052A0DC /* github.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = github.png; sourceTree = "<group>"; };
 		39DF098F1C209DF100AC341D /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		39E4F21D1C225705006E77B0 /* FireExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FireExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		39E4F21F1C225705006E77B0 /* ActionRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionRequestHandler.swift; sourceTree = "<group>"; };
@@ -120,6 +124,8 @@
 		39184DC71C209D8800262917 /* FireURL */ = {
 			isa = PBXGroup;
 			children = (
+				396245B11C23A84D0052A0DC /* github.png */,
+				396245AD1C23A1470052A0DC /* icon.png */,
 				39184DC81C209D8800262917 /* AppDelegate.swift */,
 				39184DCA1C209D8800262917 /* ViewController.swift */,
 				39184DCC1C209D8800262917 /* Main.storyboard */,
@@ -255,9 +261,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3912F99E1C22A31E0077A8E2 /* Settings.bundle in Resources */,
+				396245AE1C23A1470052A0DC /* icon.png in Resources */,
 				39184DD31C209D8800262917 /* LaunchScreen.storyboard in Resources */,
 				39184DD01C209D8800262917 /* Assets.xcassets in Resources */,
 				39184DCE1C209D8800262917 /* Main.storyboard in Resources */,
+				396245B21C23A84D0052A0DC /* github.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

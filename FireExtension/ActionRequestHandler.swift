@@ -13,7 +13,7 @@ class ActionRequestHandler: NSObject, NSExtensionRequestHandling {
                itemProvider.loadItemForTypeIdentifier(kUTTypeURL as String, options: nil, completionHandler:  {
                   (list, error) in
                   if let result = list as? NSURL {
-                     FireManager.fireURIStr("\(result)", callback: nil)
+                     FireManager.sharedInstance.fireURIStr("\(result)")
                   }
                })
             } else if itemProvider.hasItemConformingToTypeIdentifier(kUTTypePropertyList as String) {
@@ -23,7 +23,7 @@ class ActionRequestHandler: NSObject, NSExtensionRequestHandling {
                   if let results = list as? NSDictionary {
                      NSOperationQueue.mainQueue().addOperationWithBlock {
                         if let baseURL = results.valueForKeyPath("NSExtensionJavaScriptPreprocessingResultsKey.baseURI") as? String {
-                           FireManager.fireURIStr(baseURL, callback: nil)
+                           FireManager.sharedInstance.fireURIStr(baseURL)
                         } else {
                            fatalError("Cannot get URI from webpage!")
                         }

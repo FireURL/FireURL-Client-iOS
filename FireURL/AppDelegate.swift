@@ -47,7 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
       defaults.synchronize()
 
-      NSNotificationCenter.defaultCenter().postNotificationName("FIRE_URL_DID_BECOME_ACTIVE", object: nil)
+      NSNotificationCenter.defaultCenter().postNotificationName("com.prankymat.fireURL.didBecomeActive", object: nil)
    }
 
    func applicationWillTerminate(application: UIApplication) {
