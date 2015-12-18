@@ -37,17 +37,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
       let defaults = NSUserDefaults.standardUserDefaults()
 
-      if let host = defaults.valueForKey("host_perference") where host as! String == "" {
+      if let host = defaults.valueForKey("host_perference") where host as? String == "" {
           defaults.setObject("0.0.0.0", forKey: "host_perference")
       }
 
-      if let port = defaults.valueForKey("port_perference") where port as! String == "" {
+      if let port = defaults.valueForKey("port_perference") where port as? String == "" {
          defaults.setObject("0000", forKey: "port_perference")
       }
 
       defaults.synchronize()
 
-      NSNotificationCenter.defaultCenter().postNotificationName("FIRE_URL_DID_BECOME_ACTIVE", object: nil)
+      NSNotificationCenter.defaultCenter().postNotificationName("com.prankymat.fireURL.didBecomeActive", object: nil)
    }
 
    func applicationWillTerminate(application: UIApplication) {
