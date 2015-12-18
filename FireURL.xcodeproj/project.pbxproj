@@ -7,27 +7,92 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B19F9DA9FEE95BB837800C6 /* Pods_FireURL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD4F6D2EC5EC5E5F85191EE1 /* Pods_FireURL.framework */; };
 		3912F99C1C22A1540077A8E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39184DCF1C209D8800262917 /* Assets.xcassets */; };
-		3912F99E1C22A31E0077A8E2 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3912F99D1C22A31E0077A8E2 /* Settings.bundle */; };
 		39184DC91C209D8800262917 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39184DC81C209D8800262917 /* AppDelegate.swift */; };
 		39184DCB1C209D8800262917 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39184DCA1C209D8800262917 /* ViewController.swift */; };
 		39184DCE1C209D8800262917 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39184DCC1C209D8800262917 /* Main.storyboard */; };
 		39184DD01C209D8800262917 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39184DCF1C209D8800262917 /* Assets.xcassets */; };
 		39184DD31C209D8800262917 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39184DD11C209D8800262917 /* LaunchScreen.storyboard */; };
-		39388A0E1C22627B0099DE95 /* Pods_FireExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39388A0D1C22627B0099DE95 /* Pods_FireExtension.framework */; };
 		39388A101C22883A0099DE95 /* FireManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39388A0F1C22883A0099DE95 /* FireManager.swift */; };
 		39388A111C2289490099DE95 /* FireManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39388A0F1C22883A0099DE95 /* FireManager.swift */; };
 		39388A121C228C130099DE95 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DF098F1C209DF100AC341D /* NetworkManager.swift */; };
 		396245AE1C23A1470052A0DC /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 396245AD1C23A1470052A0DC /* icon.png */; };
 		396245B21C23A84D0052A0DC /* github.png in Resources */ = {isa = PBXBuildFile; fileRef = 396245B11C23A84D0052A0DC /* github.png */; };
+		398C6CD31C23C1DC00EE014F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 398C6CC61C23C1CF00EE014F /* Alamofire.framework */; };
+		398C6CD41C23C1E200EE014F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 398C6CC61C23C1CF00EE014F /* Alamofire.framework */; };
+		398C6CD61C23EE3C00EE014F /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 398C6CD51C23EE3C00EE014F /* Settings.bundle */; };
+		398C6CD71C23EE3C00EE014F /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 398C6CD51C23EE3C00EE014F /* Settings.bundle */; };
+		398C6CE01C23F4BE00EE014F /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 398C6CC61C23C1CF00EE014F /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		398C6CE71C23F4FC00EE014F /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 398C6CC61C23C1CF00EE014F /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		39DF09901C209DF100AC341D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DF098F1C209DF100AC341D /* NetworkManager.swift */; };
 		39E4F2201C225705006E77B0 /* ActionRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E4F21F1C225705006E77B0 /* ActionRequestHandler.swift */; };
 		39E4F2261C225705006E77B0 /* FireExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 39E4F21D1C225705006E77B0 /* FireExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		88A4FE0A7805F08337599204 /* Pods_FireExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E92AC726CEE34E7B4FEF94F /* Pods_FireExtension.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		398C6CC51C23C1CF00EE014F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 398C6CBB1C23C1CF00EE014F /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		398C6CC71C23C1CF00EE014F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 398C6CBB1C23C1CF00EE014F /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		398C6CC91C23C1CF00EE014F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 398C6CBB1C23C1CF00EE014F /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire OSX";
+		};
+		398C6CCB1C23C1CF00EE014F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 398C6CBB1C23C1CF00EE014F /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire OSX Tests";
+		};
+		398C6CCD1C23C1CF00EE014F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 398C6CBB1C23C1CF00EE014F /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626EF1BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS";
+		};
+		398C6CCF1C23C1CF00EE014F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 398C6CBB1C23C1CF00EE014F /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626F81BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS Tests";
+		};
+		398C6CD11C23C1CF00EE014F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 398C6CBB1C23C1CF00EE014F /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4202FE01B667AA100C997FB;
+			remoteInfo = "Alamofire watchOS";
+		};
+		398C6CD81C23F47400EE014F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 398C6CBB1C23C1CF00EE014F /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		398C6CE41C23F4EB00EE014F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 398C6CBB1C23C1CF00EE014F /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
 		39E4F2241C225705006E77B0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 39184DBD1C209D8800262917 /* Project object */;
@@ -38,6 +103,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		398C6CDA1C23F48B00EE014F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				398C6CE01C23F4BE00EE014F /* Alamofire.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		398C6CE61C23F4F400EE014F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				398C6CE71C23F4FC00EE014F /* Alamofire.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		39E4F22A1C225705006E77B0 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -52,8 +137,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		18A88D1DAB51F5D49879C94B /* Pods-FireURL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireURL.release.xcconfig"; path = "Pods/Target Support Files/Pods-FireURL/Pods-FireURL.release.xcconfig"; sourceTree = "<group>"; };
-		3912F99D1C22A31E0077A8E2 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		39184DC51C209D8800262917 /* FireURL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireURL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39184DC81C209D8800262917 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39184DCA1C209D8800262917 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,22 +144,15 @@
 		39184DCF1C209D8800262917 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		39184DD21C209D8800262917 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		39184DD41C209D8800262917 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		39388A0D1C22627B0099DE95 /* Pods_FireExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_FireExtension.framework; path = "Pods/../build/Debug-iphoneos/Pods_FireExtension.framework"; sourceTree = "<group>"; };
 		39388A0F1C22883A0099DE95 /* FireManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireManager.swift; sourceTree = "<group>"; };
 		396245AD1C23A1470052A0DC /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		396245B11C23A84D0052A0DC /* github.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = github.png; sourceTree = "<group>"; };
+		398C6CBB1C23C1CF00EE014F /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
+		398C6CD51C23EE3C00EE014F /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		39DF098F1C209DF100AC341D /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		39E4F21D1C225705006E77B0 /* FireExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FireExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		39E4F21F1C225705006E77B0 /* ActionRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionRequestHandler.swift; sourceTree = "<group>"; };
 		39E4F2231C225705006E77B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4A6D363B181B320864697335 /* Pods-FireExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-FireExtension/Pods-FireExtension.release.xcconfig"; sourceTree = "<group>"; };
-		897DC233282F21C165375320 /* Pods-FireURL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireURL.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FireURL/Pods-FireURL.debug.xcconfig"; sourceTree = "<group>"; };
-		9E92AC726CEE34E7B4FEF94F /* Pods_FireExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FireExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BD4F6D2EC5EC5E5F85191EE1 /* Pods_FireURL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FireURL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D410821344F141BB3C28BFDF /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D8502F47218F71E4ED52B2B1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		E6143891559E676D6DD04992 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		FDB3644CE601DB2B2FE8F3F8 /* Pods-FireExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FireExtension/Pods-FireExtension.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,8 +160,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39388A0E1C22627B0099DE95 /* Pods_FireExtension.framework in Frameworks */,
-				0B19F9DA9FEE95BB837800C6 /* Pods_FireURL.framework in Frameworks */,
+				398C6CD31C23C1DC00EE014F /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,7 +168,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88A4FE0A7805F08337599204 /* Pods_FireExtension.framework in Frameworks */,
+				398C6CD41C23C1E200EE014F /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,12 +178,10 @@
 		39184DBC1C209D8800262917 = {
 			isa = PBXGroup;
 			children = (
-				3912F99D1C22A31E0077A8E2 /* Settings.bundle */,
+				398C6CBB1C23C1CF00EE014F /* Alamofire.xcodeproj */,
 				39184DC71C209D8800262917 /* FireURL */,
 				39E4F21E1C225705006E77B0 /* FireExtension */,
 				39184DC61C209D8800262917 /* Products */,
-				A02661E01BED2FD414589175 /* Pods */,
-				5A1315F4242832B85A472DBB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,6 +197,7 @@
 		39184DC71C209D8800262917 /* FireURL */ = {
 			isa = PBXGroup;
 			children = (
+				398C6CD51C23EE3C00EE014F /* Settings.bundle */,
 				396245B11C23A84D0052A0DC /* github.png */,
 				396245AD1C23A1470052A0DC /* icon.png */,
 				39184DC81C209D8800262917 /* AppDelegate.swift */,
@@ -138,6 +212,20 @@
 			path = FireURL;
 			sourceTree = "<group>";
 		};
+		398C6CBC1C23C1CF00EE014F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				398C6CC61C23C1CF00EE014F /* Alamofire.framework */,
+				398C6CC81C23C1CF00EE014F /* Alamofire iOS Tests.xctest */,
+				398C6CCA1C23C1CF00EE014F /* Alamofire.framework */,
+				398C6CCC1C23C1CF00EE014F /* Alamofire OSX Tests.xctest */,
+				398C6CCE1C23C1CF00EE014F /* Alamofire.framework */,
+				398C6CD01C23C1CF00EE014F /* Alamofire tvOS Tests.xctest */,
+				398C6CD21C23C1CF00EE014F /* Alamofire.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		39E4F21E1C225705006E77B0 /* FireExtension */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,30 +235,6 @@
 			path = FireExtension;
 			sourceTree = "<group>";
 		};
-		5A1315F4242832B85A472DBB /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				39388A0D1C22627B0099DE95 /* Pods_FireExtension.framework */,
-				BD4F6D2EC5EC5E5F85191EE1 /* Pods_FireURL.framework */,
-				D410821344F141BB3C28BFDF /* Pods.framework */,
-				9E92AC726CEE34E7B4FEF94F /* Pods_FireExtension.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		A02661E01BED2FD414589175 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				897DC233282F21C165375320 /* Pods-FireURL.debug.xcconfig */,
-				18A88D1DAB51F5D49879C94B /* Pods-FireURL.release.xcconfig */,
-				E6143891559E676D6DD04992 /* Pods.debug.xcconfig */,
-				D8502F47218F71E4ED52B2B1 /* Pods.release.xcconfig */,
-				FDB3644CE601DB2B2FE8F3F8 /* Pods-FireExtension.debug.xcconfig */,
-				4A6D363B181B320864697335 /* Pods-FireExtension.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -178,17 +242,16 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 39184DD71C209D8800262917 /* Build configuration list for PBXNativeTarget "FireURL" */;
 			buildPhases = (
-				EFCB2815DF1F9AD8F6D01E1E /* Check Pods Manifest.lock */,
 				39184DC11C209D8800262917 /* Sources */,
 				39184DC21C209D8800262917 /* Frameworks */,
 				39184DC31C209D8800262917 /* Resources */,
-				523D85C5295BB53DAFCFC1F1 /* Embed Pods Frameworks */,
-				1F722971D9F9ED314325FA09 /* Copy Pods Resources */,
 				39E4F22A1C225705006E77B0 /* Embed App Extensions */,
+				398C6CDA1C23F48B00EE014F /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				398C6CD91C23F47400EE014F /* PBXTargetDependency */,
 				39E4F2251C225705006E77B0 /* PBXTargetDependency */,
 			);
 			name = FireURL;
@@ -200,16 +263,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 39E4F2291C225705006E77B0 /* Build configuration list for PBXNativeTarget "FireExtension" */;
 			buildPhases = (
-				B8243BF65D6E5BDB051A396F /* Check Pods Manifest.lock */,
 				39E4F2191C225705006E77B0 /* Sources */,
 				39E4F21A1C225705006E77B0 /* Frameworks */,
 				39E4F21B1C225705006E77B0 /* Resources */,
-				310720D978824D35F013CA60 /* Embed Pods Frameworks */,
-				6FB4205DB43E572159AD9456 /* Copy Pods Resources */,
+				398C6CE61C23F4F400EE014F /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				398C6CE51C23F4EB00EE014F /* PBXTargetDependency */,
 			);
 			name = FireExtension;
 			productName = FireExtension;
@@ -247,6 +309,12 @@
 			mainGroup = 39184DBC1C209D8800262917;
 			productRefGroup = 39184DC61C209D8800262917 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 398C6CBC1C23C1CF00EE014F /* Products */;
+					ProjectRef = 398C6CBB1C23C1CF00EE014F /* Alamofire.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				39184DC41C209D8800262917 /* FireURL */,
@@ -255,16 +323,68 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		398C6CC61C23C1CF00EE014F /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 398C6CC51C23C1CF00EE014F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		398C6CC81C23C1CF00EE014F /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = 398C6CC71C23C1CF00EE014F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		398C6CCA1C23C1CF00EE014F /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 398C6CC91C23C1CF00EE014F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		398C6CCC1C23C1CF00EE014F /* Alamofire OSX Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire OSX Tests.xctest";
+			remoteRef = 398C6CCB1C23C1CF00EE014F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		398C6CCE1C23C1CF00EE014F /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 398C6CCD1C23C1CF00EE014F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		398C6CD01C23C1CF00EE014F /* Alamofire tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire tvOS Tests.xctest";
+			remoteRef = 398C6CCF1C23C1CF00EE014F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		398C6CD21C23C1CF00EE014F /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 398C6CD11C23C1CF00EE014F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		39184DC31C209D8800262917 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3912F99E1C22A31E0077A8E2 /* Settings.bundle in Resources */,
 				396245AE1C23A1470052A0DC /* icon.png in Resources */,
 				39184DD31C209D8800262917 /* LaunchScreen.storyboard in Resources */,
 				39184DD01C209D8800262917 /* Assets.xcassets in Resources */,
 				39184DCE1C209D8800262917 /* Main.storyboard in Resources */,
+				398C6CD61C23EE3C00EE014F /* Settings.bundle in Resources */,
 				396245B21C23A84D0052A0DC /* github.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,104 +393,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				398C6CD71C23EE3C00EE014F /* Settings.bundle in Resources */,
 				3912F99C1C22A1540077A8E2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		1F722971D9F9ED314325FA09 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FireURL/Pods-FireURL-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		310720D978824D35F013CA60 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FireExtension/Pods-FireExtension-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		523D85C5295BB53DAFCFC1F1 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FireURL/Pods-FireURL-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6FB4205DB43E572159AD9456 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FireExtension/Pods-FireExtension-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B8243BF65D6E5BDB051A396F /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		EFCB2815DF1F9AD8F6D01E1E /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		39184DC11C209D8800262917 /* Sources */ = {
@@ -397,6 +425,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		398C6CD91C23F47400EE014F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = 398C6CD81C23F47400EE014F /* PBXContainerItemProxy */;
+		};
+		398C6CE51C23F4EB00EE014F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = 398C6CE41C23F4EB00EE014F /* PBXContainerItemProxy */;
+		};
 		39E4F2251C225705006E77B0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 39E4F21C1C225705006E77B0 /* FireExtension */;
@@ -461,9 +499,9 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = "$(inherited)";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -500,8 +538,8 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "$(inherited)";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -509,10 +547,14 @@
 		};
 		39184DD81C209D8800262917 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 897DC233282F21C165375320 /* Pods-FireURL.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = FireURL/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = PrankyMat.FireURL;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -520,10 +562,14 @@
 		};
 		39184DD91C209D8800262917 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 18A88D1DAB51F5D49879C94B /* Pods-FireURL.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = FireURL/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = PrankyMat.FireURL;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -531,11 +577,14 @@
 		};
 		39E4F2271C225705006E77B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FDB3644CE601DB2B2FE8F3F8 /* Pods-FireExtension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = FireExtension/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = PrankyMat.FireURL.FireExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -544,11 +593,14 @@
 		};
 		39E4F2281C225705006E77B0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A6D363B181B320864697335 /* Pods-FireExtension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = FireExtension/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = PrankyMat.FireURL.FireExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

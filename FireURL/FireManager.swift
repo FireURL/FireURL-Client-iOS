@@ -1,10 +1,12 @@
 import UIKit
+import Alamofire
 
 internal class FireManager {
 
    static let sharedInstance = FireManager()
 
    var firing = false
+   var currentReq : Request? = nil
 
    private static func convertURI(str : String) -> String? {
       // returns str if valid URI, nil otherwise
@@ -12,16 +14,15 @@ internal class FireManager {
    }
 
    private func fireURI(uri: String) {
-      print("firing...")
       firing = true
       do {
-         try NetworkManager.sharedInstance.performPostRequest(["url": uri]) { (succeed) -> () in
-            print("Succeed when firing url: \(succeed)")
-            NSNotificationCenter.defaultCenter().postNotificationName("com.prankymat.fireURL.didFireURI", object: nil)
+         currentReq = try NetworkManager.sharedInstance.performPostRequest(["url": uri]) { (succeed) -> () in
+            NSNotificationCenter.defaultCenter().postNotificationName("com.prankymat.fireURL.didFireURI", object: ["succeed": succeed])
             self.firing = false
+            self.currentReq = nil
          }
-      } catch {
-         print("error")
+      } catch let e {
+         print("Error when firing URL, error: \(e)")
       }
    }
 
@@ -38,7 +39,12 @@ internal class FireManager {
    }
 
    func stopAllFiring() {
-      
+      if let currentReq = currentReq {
+         currentReq.cancel()
+         self.firing = false
+         NSNotificationCenter.defaultCenter().postNotificationName("com.prankymat.fireURL.didCancelFireURI", object: nil)
+      }
+      currentReq = nil
    }
 
 }
