@@ -4,15 +4,13 @@ Conveniently fires an URL from iOS's pasteboard, or any link-based sharing app t
 ## Prerequisites
 1. Computer with [FireURL Server](https://github.com/FireURL/FireURL-Server) (>= 0.3.1) running
 2. OSX with XCode 7 installed
-3. [Cocoapods](https://cocoapods.org/) installed
 3. iOS Device (iOS >= 9.2)
 
 ## Installation
 1. Clone and ```cd``` into this repo
-2. Run ```pod install```
-3. Open ```FireURL.xcworkspace```
-4. Plug in your iOS device and press ```Run``` in XCode
-5. FireURL for iOS is installed.
+2. Open ```FireURL.xcodeproj```
+3. Plug in your iOS device and press ```Run``` in XCode
+4. FireURL for iOS is installed.
 
 ## Settings
 You must specify the configurations of the [FireURL server](https://github.com/FireURL/FireURL-Server) in ```Settings.app``` of your iOS device before using this app.
